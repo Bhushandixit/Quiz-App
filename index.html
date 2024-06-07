@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="queries.css">
+    <title>Quiz Application</title>
+</head>
+<body class="wrapper">
+    <div class="container">
+        <div class="welcome_text">
+            <form class="welcome_form" onsubmit="submitForm(event)" name="welcome_form">
+                <input type="text" name="name" class="addText" placeholder="Enter your full name..." maxlength="40">
+                        <button type="submit" id="submit">Start quiz</button>
+            </form>
+        </div>
+
+        <div id="header_tag" style="display:none;">
+            <header class="quizTitle">Quiz</header>
+        </div>
+        <div id="but" style="display:none;">
+            <header>×</header>
+        </div>
+        
+        <div id="header_no" style="display:none;">B</div>
+        <div id="anothertag" style="display:none;">
+            <b>
+                <p id="quizNumber"><span>Question 1<span>/7</span></span></p>
+            </b>
+        </div>
+        
+        <div id="time_tag" style="display:none;">
+            <b><span class="time">00:00:00</span></b>
+        </div>
+        
+        <div id="correctClass" style="display:none;">
+            <b><span id="correctTag">0/7 Correct</span></b>
+        </div>
+        
+        <div class="quiz_body" style="display:none;">
+            <div id="questions">
+                <h2>Q1. What does HTML stand for?</h2>
+                <ul class="option_group">
+                    <li class="option">Hyper Text Markup Language</li>
+                    <li class="option">HyperLinks and Text Markup Language</li>
+                    <li class="option">Home Tool Markup Language</li>
+                    <li class="option">HyperLink Markup Language</li>
+                </ul>
+            </div>
+            
+            <button type="button" name="button" id="submitQuiz" class="btn-next" disabled>SUBMIT</button>
+        </div>
+        
+        <footer id="footer"></footer>
+        
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">×</span>
+                <p class="quit">Are You Sure! You want to Exit the Assessment?</p>
+                <button id="quitTag">Yes</button>
+                <button id="startTag">No</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="form.js"></script>
+    <script src="questions.js"></script>
+    <script src="timer.js"></script>
+</body>
+</html>

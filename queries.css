@@ -1,0 +1,18 @@
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .quizTitle {
+        font-size: 20px;
+    }
+
+    .btn-next {
+        padding: 8px;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+}
